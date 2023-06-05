@@ -64,7 +64,7 @@ function calculate() {
 					if(data.d.val * k * i >= data.h.val * lay - data.d.val * k / 2) {
 						lay += 1;
 						Dd += data.d.val * k;	// диаметр витка
-						temp.g = data.d.val * k * lay;	//	количество слоёв
+						temp.g = data.d.val * k * lay;	//	толщина намотки
 					}
 					l += Dd * Math.PI * 0.001;	// длина проволоки в метрах
 					D = (D1 + Dd) / 2;	// средний диаметр катушки
