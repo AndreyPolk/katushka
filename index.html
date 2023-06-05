@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+<title>Henry</title>
+<link type='text/css' rel='stylesheet' href='css/jquery-ui.css'>
+<link type='text/css' rel='stylesheet' href='css/jquery-ui.structure.css'>
+<link type='text/css' rel='stylesheet' href='css/jquery-ui.theme.css'>
+<link type='text/css' rel='stylesheet' href='css/style.css'>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery-ui.js'></script>
+<script type='text/javascript' src='js/globalize.js'></script>
+<script type='text/javascript' src='js/globalize.culture.ru.js'></script>
+<script type='text/javascript' src='js/Fx.js'></script>
+<script type='text/javascript' src='js/henry.js'></script>
+</head>
+<body>
+	<h1>&nbsp;Катушка индуктивности</h1>
+	<form enctype="text/plain" method="post" name="params" target="_self">
+		<table align="left" border="1" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td><label for="L">Индуктивность, мкГн</label></td>
+					<td><input name="L" id="L" required="required" type="number" min="0" step="1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="D">Внутренний диаметр катушки, мм</label></td>
+					<td><input name="D" id="D" required="required" type="number" min="0" step="1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="d">Диаметр провода, мм</label></td>
+					<td><input name="d" id="d" required="required" type="number" min="0" step="0.1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="N">Количество витков</label></td>
+					<td><input name="N" id="N" required="required" type="number" min="0" step="1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="h">Длина намотки, мм</label></td>
+					<td><input name="h" id="h" required="required" type="number" min="0" step="1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="g">Толщина намотки, мм</label></td>
+					<td><input name="g" id="g" required="required" type="number" min="0" step="1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="l">Длина проволоки, м</label></td>
+					<td><input name="l" id="l" required="required" type="number" min="0" step="1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="r">Сопротивление катушки, Ом</label></td>
+					<td><input name="r" id="r" required="required" type="number" min="0" step="1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="f">Частота среза, Гц</label></td>
+					<td><input name="f" id="f" required="required" type="number" min="0" step="1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="Rx">Реактивное сопротивление, Ом</label></td>
+					<td><input name="Rx" id="Rx" required="required" type="number" min="0" step="1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="Q">Добротность на частоте среза</label></td>
+					<td><input name="Q" id="Q" required="required" type="number" min="0" step="1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="C">Ёмкость конденсаторов контура, мкФ</label></td>
+					<td><input name="C" id="C" required="required" type="number" min="0" step="0.1" /></td>
+					<td>
+						<select>
+							<option value="1" selected>&quest;</option>
+							<option value="2">&#10004;</option>
+							<option value="3">&nbsp;</option>
+						</select>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--<input name="henry" type="submit" value="расчитать" onclick="return false" />-->
+	</form>
+
+</body>
+</html>

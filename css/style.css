@@ -1,0 +1,19 @@
+
+form {
+	width: 500px;
+}
+form input[type="number"] {
+	
+}
+td {
+	padding: 5px;
+}
+.select {
+	opacity: 1;
+}
+.noselect {
+	opacity: 0;
+}
+.preselect {
+	opacity: 0.5;
+}
