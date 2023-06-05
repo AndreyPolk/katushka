@@ -28,7 +28,7 @@ var data = {
 	Rx: {val: 0, sel: 1},
 	Q: {val: 0, sel: 1},
 	C: {val: 0, sel: 1},
-	lay: [val: 0, sel: 3}
+	lay: {val: 0, sel: 3}
 };
 
 function toNumber() {
@@ -102,9 +102,7 @@ function setTableData() {
 	let result = calculate();
 	if(result) {
 		for(let index in result) {
-			console.log(index, data[index], data[index].val);
 			data[index].val = result[index];
-			
 		}
 		delete result;
 		tableData();
@@ -124,8 +122,6 @@ function getValue() {
 }
 
 $(document).ready(function() {
-	
-//$("table select").val("1");	
 
 tableData();
 
