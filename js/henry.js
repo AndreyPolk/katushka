@@ -68,11 +68,7 @@ function calculate() {
 					}
 					l += Dd * Math.PI * 0.001;	// длина проволоки в метрах
 					D = (D1 + Dd) / 2;	// средний диаметр катушки
-					if(lay == 1) {
-						h = data.d.val * k * i;
-					} else {
-						h = data.h.val * k;
-					}
+					h = data.h.val;
 					L = 0.008 * D * D * i * i / ( 3 * D + 9 * h + 10 * temp.g );
 					if(L >= data.L.val) {
 						temp.r = ro * l / (data.d.val * data.d.val * Math.PI / 4);
